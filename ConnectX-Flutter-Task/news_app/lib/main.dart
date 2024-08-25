@@ -41,12 +41,11 @@ class _NewsArticleScreenState extends State<NewsArticle> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // Gray Box with Rounded Corners behind Date, Title, and Authors
                   Container(
                     decoration: BoxDecoration(
                       color: const Color.fromARGB(255, 238, 238, 238),
                       borderRadius:
-                          BorderRadius.circular(15.0), // Rounded corners
+                          BorderRadius.circular(15.0), 
                     ),
                     padding: const EdgeInsets.all(8.0),
                     child: const Column(
