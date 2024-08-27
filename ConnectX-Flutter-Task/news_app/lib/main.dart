@@ -9,6 +9,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'News article',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -35,13 +36,11 @@ class _NewsArticleScreenState extends State<NewsArticle> {
               'https://d3i6fh83elv35t.cloudfront.net/static/2024/01/2024-01-28T222938Z_1560774941_RC2AR5AK21LS_RTRMADP_3_ISRAEL-PALESTINIANS-USA-JORDAN-1024x576.jpg',
               fit: BoxFit.cover,
             ),
-            Container(),
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // Gray Box with Rounded Corners behind Date, Title, and Authors
                   Container(
                     decoration: BoxDecoration(
                       color: const Color.fromARGB(255, 238, 238, 238),
